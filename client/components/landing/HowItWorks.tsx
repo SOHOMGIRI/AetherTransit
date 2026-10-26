@@ -55,7 +55,7 @@ export default function HowItWorks() {
             HOW IT WORKS
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#1C1917] tracking-tight">
-            How CampusRide works in{" "}
+            How ÆtherTransit works in{" "}
             <span className="bg-gradient-to-r from-[#1E40AF] via-[#7C3AED] to-[#B45309] bg-clip-text text-transparent">
               3 simple steps
             </span>

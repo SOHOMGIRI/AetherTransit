@@ -1,14 +1,22 @@
-# ⚡ AetherTransit
-### Autonomous Real-Time Fleet Telemetry & Predictive Transit Intelligence Platform
+<div align="center">
+  <img src="client/public/assets/logo.png" width="96" height="96" alt="ÆtherTransit Logo" />
+  <h1>ÆtherTransit</h1>
+  <p><strong>Autonomous Real-Time Fleet Telemetry &amp; Predictive Transit Intelligence Platform</strong></p>
+  <p><em>Engineered by <strong>Sohom Giri</strong> · Department of Computer Science &amp; Engineering, STCET Kolkata</em></p>
 
-[![Next.js](https://img.shields.io/badge/Next.js-16.4.3-black?logo=next.js)](https://nextjs.org/)
-[![React](https://img.shields.io/badge/React-19.2-blue?logo=react)](https://react.dev/)
-[![Node.js](https://img.shields.io/badge/Node.js-Express-green?logo=node.js)](https://nodejs.org/)
-[![Socket.io](https://img.shields.io/badge/Socket.io-Realtime-orange?logo=socket.io)](https://socket.io/)
-[![MongoDB Atlas](https://img.shields.io/badge/MongoDB-Atlas_Cloud-brightgreen?logo=mongodb)](https://www.mongodb.com/)
-[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-v4-cyan?logo=tailwindcss)](https://tailwindcss.com/)
+  <p>
+    <a href="https://nextjs.org/"><img src="https://img.shields.io/badge/Next.js-16.4.3-black?logo=next.js" alt="Next.js" /></a>
+    <a href="https://react.dev/"><img src="https://img.shields.io/badge/React-19.2-blue?logo=react" alt="React" /></a>
+    <a href="https://nodejs.org/"><img src="https://img.shields.io/badge/Node.js-Express-green?logo=node.js" alt="Node.js" /></a>
+    <a href="https://socket.io/"><img src="https://img.shields.io/badge/Socket.io-Realtime-orange?logo=socket.io" alt="Socket.io" /></a>
+    <a href="https://www.mongodb.com/"><img src="https://img.shields.io/badge/MongoDB-Atlas_Cloud-brightgreen?logo=mongodb" alt="MongoDB Atlas" /></a>
+    <a href="https://tailwindcss.com/"><img src="https://img.shields.io/badge/TailwindCSS-v4-cyan?logo=tailwindcss" alt="TailwindCSS" /></a>
+  </p>
+</div>
 
-> **AetherTransit** is an enterprise-grade transit intelligence and fleet telemetry platform architected for smart campuses and urban transport networks. It merges high-frequency vector mapping, edge simulation, and in-process predictive ML models to compute traffic congestion bottlenecks, calculate alternate detour corridors, and deliver real-time vehicle telemetry to commuters and transit operators.
+---
+
+> **ÆtherTransit** is an enterprise-grade transit intelligence and fleet telemetry platform architected for smart campuses and urban transport networks. It merges high-frequency vector mapping, edge simulation, and in-process predictive ML models to compute traffic congestion bottlenecks, calculate alternate detour corridors, and deliver real-time vehicle telemetry to commuters and transit operators.
 
 ---
 
@@ -64,7 +72,7 @@ graph TD
 ## 🚀 5 Standout Production Features
 
 ### 1. Multi-Shuttle Fleet Selector (B01, B02, B03)
-- **What it does:** Instead of a hardcoded single entity, AetherTransit simulates a multi-tenant fleet running concurrently across South Kolkata transit arteries:
+- **What it does:** Instead of a hardcoded single entity, ÆtherTransit simulates a multi-tenant fleet running concurrently across South Kolkata transit arteries:
   - 🚌 **Shuttle B01** (Taratala Express) — Primary campus connector
   - 🚐 **Shuttle B02** (Behala Rapid) — High-capacity arterial shuttle
   - 🚌 **Shuttle B03** (Alipore Corridor) — Rapid feeder service
@@ -116,7 +124,7 @@ $$\text{Delay} = (\Delta d \times \beta_{\text{speed}}) + \alpha_{\text{rush}} +
 ```
 AetherTransit/
 ├── client/                     # Next.js 16 + React 19 Frontend
-│   ├── app/                    # App Router (dashboard, driver, analytics, login)
+│   ├── app/                    # App Router (dashboard, driver, analytics, login, about, routes)
 │   ├── components/             # MapLibre Vector Map, 3D Student Pass, Radar
 │   ├── hooks/                  # useBusSocket (60 FPS Telemetry & Audio Chime)
 │   ├── types/                  # TypeScript interface specifications

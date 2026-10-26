@@ -204,7 +204,7 @@ export default function RegisterPage() {
       <div className="w-full max-w-[460px] bg-parchment-warm border border-stone-subtle rounded-3xl p-8 sm:p-10 shadow-xs">
         <div className="flex flex-col items-center justify-center mb-8 text-center">
           <Link href="/" className="inline-flex items-center gap-2 text-espresso hover:text-terracotta transition-colors mb-2">
-            <span className="font-serif italic text-3xl font-semibold tracking-tight">CampusRide</span>
+            <span className="font-serif italic text-3xl font-semibold tracking-tight">ÆtherTransit</span>
           </Link>
           <span className="text-xs uppercase tracking-widest font-semibold text-stone-text block">
             Account Registration
@@ -265,7 +265,7 @@ export default function RegisterPage() {
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              placeholder={role === "STUDENT" ? "student@stcet.ac.in" : "driver@campusride.com"}
+              placeholder={role === "STUDENT" ? "student@stcet.ac.in" : "driver@aethertransit.io"}
               required
               className="px-4 py-3 rounded-xl bg-parchment border border-stone-subtle text-espresso text-base placeholder:text-stone-medium focus:outline-none focus:border-terracotta focus:ring-1 focus:ring-terracotta transition-all shadow-sm"
             />
@@ -408,7 +408,7 @@ export default function RegisterPage() {
                  <span className="material-symbols-outlined animate-spin text-sm">sync</span>
                  <span>
                     {role === "STUDENT" 
-                      ? "Finding your nearest CampusRide stop..." 
+                      ? "Finding your nearest ÆtherTransit stop..." 
                       : "Registering driver profile..."}
                  </span>
               </>

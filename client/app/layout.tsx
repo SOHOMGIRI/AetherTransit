@@ -7,10 +7,10 @@ import Navbar from "@/components/layout/Navbar"
 import Footer from "@/components/layout/Footer"
 
 export const metadata: Metadata = {
-  title: "AetherTransit — Real-Time Fleet Telemetry & Transit Intelligence",
+  title: "ÆtherTransit — Real-Time Fleet Telemetry & Transit Intelligence",
   description:
-    "AetherTransit delivers sub-second GPS tracking, predictive ML delay forecasts, and dynamic corridor navigation for smart campus transit.",
-  keywords: ["AetherTransit", "fleet tracking", "campus bus tracking", "real-time GPS", "delay prediction", "STCET", "transit telemetry"],
+    "ÆtherTransit delivers sub-second GPS tracking, predictive ML delay forecasts, and dynamic corridor navigation for smart campus transit.",
+  keywords: ["ÆtherTransit", "AetherTransit", "fleet tracking", "campus bus tracking", "real-time GPS", "delay prediction", "STCET", "transit telemetry"],
   icons: {
     icon: "/assets/logo.png",
     shortcut: "/assets/logo.png",

@@ -45,12 +45,12 @@ export default function Navbar() {
             <div className="relative w-8 h-8 sm:w-10 sm:h-10">
               <Image
                 src="/assets/logo.png"
-                alt="AetherTransit Logo"
+                alt="ÆtherTransit Logo"
                 fill
                 style={{ objectFit: 'contain' }}
               />
             </div>
-            <span className="font-serif italic text-2xl sm:text-3xl font-semibold tracking-tight text-espresso group-hover:text-terracotta transition-colors">AetherTransit</span>
+            <span className="font-serif italic text-2xl sm:text-3xl font-semibold tracking-tight text-espresso group-hover:text-terracotta transition-colors">ÆtherTransit</span>
             <span className="text-[10px] sm:text-xs uppercase tracking-widest font-semibold text-stone-text pl-3 border-l border-stone-subtle hidden sm:inline-block">Student Live Map</span>
           </Link>
         </div>
@@ -60,6 +60,7 @@ export default function Navbar() {
           <Link className="hover:text-espresso transition-colors" href="/#how-it-works">How It Works</Link>
           <Link className="hover:text-espresso transition-colors" href="/dashboard">Live Map</Link>
           <Link className="hover:text-espresso transition-colors" href="/routes">Routes &amp; Stops</Link>
+          <Link className="hover:text-espresso transition-colors font-medium text-terracotta" href="/analytics">ML Analytics</Link>
           <Link className="hover:text-espresso transition-colors" href="/about">About</Link>
           {userRole === "ADMIN" && (
             <Link className="hover:text-espresso transition-colors text-terracotta border-b border-transparent hover:border-terracotta" href="/admin">Admin Console</Link>
@@ -136,6 +137,7 @@ export default function Navbar() {
           <Link className="text-espresso font-medium text-lg" href="/#how-it-works" onClick={() => setIsMobileMenuOpen(false)}>How It Works</Link>
           <Link className="text-espresso font-medium text-lg" href="/dashboard" onClick={() => setIsMobileMenuOpen(false)}>Live Map</Link>
           <Link className="text-espresso font-medium text-lg" href="/routes" onClick={() => setIsMobileMenuOpen(false)}>Routes &amp; Stops</Link>
+          <Link className="text-terracotta font-medium text-lg" href="/analytics" onClick={() => setIsMobileMenuOpen(false)}>ML Analytics</Link>
           <Link className="text-espresso font-medium text-lg" href="/about" onClick={() => setIsMobileMenuOpen(false)}>About</Link>
           {userRole === "ADMIN" && (
             <Link className="text-terracotta font-medium text-lg" href="/admin" onClick={() => setIsMobileMenuOpen(false)}>Admin Console</Link>

@@ -83,7 +83,7 @@ export default function StudentDashboard() {
         duration: 8000,
       })
       if (typeof window !== "undefined" && "Notification" in window && Notification.permission === "granted") {
-        new Notification("CampusRide Alert", {
+        new Notification("ÆtherTransit Alert", {
           body: `Bus B01 is ${busData.eta_minutes} min away from your stop!`,
           icon: "/favicon.ico",
         })
@@ -116,7 +116,7 @@ export default function StudentDashboard() {
     toast.warning(message, { duration: 7000 })
 
     if (typeof window !== "undefined" && "Notification" in window && Notification.permission === "granted") {
-      new Notification("CampusRide Delay Update", { body: message, icon: "/favicon.ico" })
+      new Notification("ÆtherTransit Delay Update", { body: message, icon: "/assets/logo.png" })
     }
   }, [busData?.delay_minutes])
 
