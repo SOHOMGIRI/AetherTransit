@@ -119,7 +119,7 @@ export default function RegisterPage() {
 
     try {
       const data = await api.register(
-        role,
+        role.toLowerCase(),
         name,
         email,
         password,

@@ -22,7 +22,7 @@ exports.register = async (req, res, next) => {
       name,
       email,
       password,
-      role: role || 'student',
+      role: (role || 'student').toLowerCase(),
       studentId: studentId || `STCET-CSE-2026-${Math.floor(100 + Math.random() * 900)}`,
       phone: phone || '+91 98765 43210',
     });

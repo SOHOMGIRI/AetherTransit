@@ -22,7 +22,8 @@ const UserSchema = new mongoose.Schema({
   },
   role: {
     type: String,
-    enum: ['student', 'driver', 'admin'],
+    enum: ['student', 'driver', 'admin', 'STUDENT', 'DRIVER', 'ADMIN'],
+    set: (v) => (v ? v.toLowerCase() : 'student'),
     default: 'student',
   },
   studentId: {

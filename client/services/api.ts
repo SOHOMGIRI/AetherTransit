@@ -88,7 +88,7 @@ export const api = {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        role, name, email, password,
+        role: (role || 'student').toLowerCase(), name, email, password,
         campus, pickupLatitude, pickupLongitude,
         driverId, assignedBusId, assignedRouteId, assignedStopId
       })
