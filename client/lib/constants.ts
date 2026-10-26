@@ -1,4 +1,4 @@
-// Constants for the Smart Campus Transport app
+// Constants for the ÆtherTransit platform
 // Keeping all the real campus data here makes it easy to update
 
 import type { BusRoute, BusStop } from "@/types/bus"
