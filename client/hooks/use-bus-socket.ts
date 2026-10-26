@@ -177,9 +177,13 @@ export function useBusSocket(): UseBusSocketResult {
       }
     }
 
-    // 2. Connect to Backend Socket.io Server (Port 5000)
+    // 2. Connect to Backend Socket.io Server
     try {
-      const socket = io("http://localhost:5000", {
+      const socketServerUrl =
+        process.env.NEXT_PUBLIC_SOCKET_URL ||
+        process.env.NEXT_PUBLIC_API_URL ||
+        "http://localhost:5000"
+      const socket = io(socketServerUrl, {
         transports: ["websocket", "polling"],
         reconnectionAttempts: 5,
         timeout: 4000,
