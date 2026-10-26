@@ -1,0 +1,73 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  /* Minimalist Editorial Theme Colors */
+  --color-parchment: #FAF7F2;
+  --color-parchment-warm: #F4EFE6;
+  --color-parchment-deep: #ECE5D8;
+  --color-espresso: #1C1917;
+  --color-stone-subtle: #E7E5E4;
+  --color-stone-medium: #D6D3D1;
+  --color-stone-text: #78716C;
+  --color-stone-dark: #44403C;
+  --color-terracotta: #EA580C;
+  --color-terracotta-dark: #C2410C;
+  --color-terracotta-soft: #FFEDD5;
+  --color-sage: #15803D;
+  --color-sage-soft: #DCFCE7;
+  --color-sage-dark: #166534;
+  --color-transitblue: #1D4ED8;
+  --color-transitblue-soft: #DBEAFE;
+
+  /* Fonts */
+  --font-sans: var(--font-sans);
+  --font-serif: var(--font-serif);
+
+  /* Animations */
+  @keyframes drive {
+    0% { left: 0%; transform: translate(-50%, -50%); }
+    45% { left: 50%; transform: translate(-50%, -50%); }
+    55% { left: 50%; transform: translate(-50%, -50%); }
+    100% { left: 100%; transform: translate(-50%, -50%); }
+  }
+  @keyframes grow {
+    0% { transform: scaleX(0); }
+    100% { transform: scaleX(1); }
+  }
+}
+
+
+:root {
+  --background: #FAF7F2;
+  --foreground: #1C1917;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    @apply font-sans scroll-smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    min-height: 100svh;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background-color: #FFEDD5;
+    color: #C2410C;
+  }
+}
