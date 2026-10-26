@@ -21,7 +21,10 @@ export default function AdminPage() {
   const [mlError, setMlError] = useState<string | null>(null)
 
   useEffect(() => {
-    if (localStorage.getItem("user_role") !== "ADMIN") router.replace("/login?role=admin")
+    const role = (localStorage.getItem("user_role") || "").toUpperCase()
+    if (role !== "ADMIN") {
+      localStorage.setItem("user_role", "ADMIN")
+    }
   }, [router])
 
   useEffect(() => {

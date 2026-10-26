@@ -143,7 +143,7 @@ export default function About() {
           </h2>
 
           <p className="text-base text-[#57534E] leading-relaxed">
-            St. Thomas&apos; College of Engineering and Technology sits at the bustling junction of Khidderpore and Diamond Harbour Road. Daily commuters endure intense bottlenecks along Taratala, Majerhat, and New Alipore. AetherTransit replaces uncertainty with mathematical precision.
+            St. Thomas&apos; College of Engineering and Technology sits at the bustling junction of Khidderpore and Diamond Harbour Road. Daily commuters endure intense bottlenecks along Taratala, Majerhat, and New Alipore. ÆtherTransit replaces uncertainty with mathematical precision.
           </p>
 
           {/* Key Pillars */}
